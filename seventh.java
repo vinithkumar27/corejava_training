@@ -1,26 +1,46 @@
-package practice0111;
+package practice0211;
 import java.util.*;
+class pink
+{
+	Scanner in = new Scanner(System.in);
+	pink()
+	{
+		int[] x=new int[5];
+		System.out.println("enter the values to add");
+		for(int i=0;i<5;i++)
+		{
+			x[i]=in.nextInt();
+		}
+		//using while loop
+	    int i=0;
+		int add=0;
+		while(i<=4)
+		{
+			add=add+x[i];
+			i++;
+		}
+		System.out.println("add using while loop : "+add);  
+		//using do-while loop
+		int add1=0;
+		int j=0;
+		do {
+			add1=add1+x[j];
+			j++;
+		}while(j<=4);
+		System.out.println("add using do-while loop : "+add1);
+		//using for-loop
+		int add2=0;
+	for(int k=0;k<5;k++)
+	{
+		 add2+=x[k];
+	}System.out.println("add using for loop : "+add2);
+	}
+}
+
 public class seventh
 {
-//prime number
-	static Scanner in = new Scanner(System.in);
 	public static void main(String[] args)
 	{
-		int num1,i,count=0;
-        System.out.println("To check the number is prime number or not");
-        num1 = in.nextInt();
-        for(i=2;i<num1;i++)
-        {
-           if(num1%i==0)
-           {
-        	   count++;
-        	   break;
-           }
-        }
-        if(count==0)
-        	System.out.println("it is prime number");
-        else
-        	System.out.println("it is not a prime number");
+       pink obj = new pink();
 	}
-
 }

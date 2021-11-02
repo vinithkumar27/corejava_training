@@ -1,31 +1,25 @@
-package practice0111;
+package practice0211;
 import java.util.*;
-class kiddo
+class blue
 {
-	//fibonacci series
 	Scanner in = new Scanner(System.in);
-	kiddo()
+	blue()
 	{
-	 int value1=0;
-	 int value2=1;
-	 int value3=0;
-	 System.out.println("enter the fibinocci value");
-	 int x=in.nextInt();
-	 System.out.println("0");
-	 for(int i=1;i<x;i++)
-	 {
-		 value3 =value1+value2;
-		 System.out.println(value3);
-		 value1=value2;
-		 value2=value3;
-	 } 
+	System.out.println("check three float values ,which is bigger one");
+	System.out.println("enter three float values ");
+	float f1 = in.nextFloat();
+	float f2 =in.nextFloat();
+	float f3 =in.nextFloat();
+	String check1 =((f1>f2)&&(f1>f3))?"f1 is bigger one":(f2>f3)?"f2 is bigger one":"f3 is bigger one";
+	System.out.println(check1);
 	}
 }
+public class fourth {
 
-public class fourth 
-{
 	public static void main(String[] args) 
 	{
-         kiddo obj = new kiddo();
+		// TODO Auto-generated method stub
+        blue obj = new blue();
 	}
+
 }

@@ -1,29 +1,69 @@
-package practice0111;
+package practice0211;
 import java.util.*;
-public class sixth 
+class kakhi
 {
-	static Scanner in = new Scanner(System.in);
+	String color;
+	Scanner in = new Scanner(System.in);
+	 public void kakhi1()
+	 {
+	   System.out.println("enter first letter of vibgyor to find a color");
+       color=in.nextLine();
+       colorcheck();
+	 }
+       public void colorcheck()
+       {
+       	switch(color)
+       	{
+       	case "v":
+       	{
+       		System.out.println("this is violet");
+       		break;
+       	}
+       	case "i":
+       	{
+       		System.out.println("this is indigo");
+       		break;
+       	}
+       	case "b":
+       	{
+       		System.out.println("this is blue");
+       		break;
+       	}
+       	case "g":
+       	{
+       		System.out.println("this is green");
+       		break;
+       	}
+       	case "y":
+       	{
+       		System.out.println("this is yellow");
+       		break;
+       	}
+       	case "o":
+       	{
+       		System.out.println("this is orange");
+       		break;
+       	}
+       	case "r":
+       	{
+       		System.out.println("this is red");
+       		break;
+       	}
+       	default:
+       	{
+       		System.out.println("please select color from vibgyor");
+       		kakhi1();
+       	}
+       	
+       		
+       	}
+	 }
+}
+
+public class sixth {
 	public static void main(String[] args)
 	{
-		//amstrong number
-        System.out.println("check the no is amstrong number or not");
-        int y=in.nextInt();
-        int x=y;;
-        int temp=0;
-         int n2;
-        while(x!=0)
-        {	
-        	n2=x%10;
-        	temp+=Math.pow(n2, 3);
-        	x=x/10; 	
-        }
-        if(y==temp)
-        {
-        	System.out.println("amstrong number");
-        }
-        else
-        {
-        	System.out.println("not a amstrong number");
-        }
+      kakhi obj = new kakhi();
+      obj.kakhi1();
 	}
 }

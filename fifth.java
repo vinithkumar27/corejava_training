@@ -1,18 +1,27 @@
-package practice0111;
+package practice0211;
 import java.util.*;
+class green
+{
+	//using array which one is bigger
+	green()
+	{
+      int[] x= {10,20,30,40,50};
+      int max=x[0];
+      for(int i=0;i<x.length;i++)
+      {
+    		if(max<x[i])
+    		{
+    			max=x[i];
+    		}
+    	}
+      System.out.println("the maximum value is "+max);
+	}
+}
 public class fifth {
 
 	public static void main(String[] args)
 	{
-		Scanner in = new Scanner(System.in);
-		//factorial program
-       int x=1;
-       System.out.println("enter the factorial value");
-       int fact=in.nextInt();
-       for(int i=1;i<=fact;i++)
-       {
-    	    x=x*i;	  
-       }System.out.println(x);
+         green obj = new green();
 	}
 
 }
